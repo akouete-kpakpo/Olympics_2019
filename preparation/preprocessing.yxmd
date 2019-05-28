@@ -1,0 +1,1497 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.3">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="354" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">..\data\train_requests.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>65001</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>True</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>True</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>train_requests.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="request_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="animal_presence" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="answer_creation_date" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="child_situation" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="child_to_come" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="district" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="granted_number_of_nights" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="group_composition_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="group_composition_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="group_creation_date" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="group_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="group_main_requester_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="group_type" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="housing_situation_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="housing_situation_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="long_term_housing_request" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="number_of_underage" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="request_backoffice_creator_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="request_creation_date" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="requester_type" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="social_situation_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="town" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="victim_of_violence" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+            <Field name="victim_of_violence_type" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1122" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">exports/train_requests_enriched.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>65001</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>train_requests_enriched.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="402" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">..\data\test_requests.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>65001</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>True</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>True</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>test_requests.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="request_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="animal_presence" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="answer_creation_date" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="child_situation" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="child_to_come" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="district" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="group_composition_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="group_composition_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="group_creation_date" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="group_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="group_main_requester_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="group_type" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="housing_situation_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="housing_situation_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="long_term_housing_request" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="number_of_underage" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="request_backoffice_creator_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="request_creation_date" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="requester_type" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="social_situation_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="town" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="victim_of_violence" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+            <Field name="victim_of_violence_type" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1170" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">exports/test_requests_enriched.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>65001</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>test_requests_enriched.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="534" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="request_backoffice_creator_id" action="CountDistinct" rename="CountDistinct_request_backoffice_creator_id" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="702" y="450" width="205.601" height="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Enrich requests training data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="727" y="493" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">../data/train_individuals.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>train_individuals.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="request_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="individual_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="housing_situation_2_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="housing_situation_2_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="birth_month" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="birth_year" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="childcare_center_supervision" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="disabled_worker_certification" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="individual_creation_date" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="individual_role" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="individual_role_2_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="individual_role_2_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="marital_status_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="marital_status_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="pregnancy" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="726.9999" y="804.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">..\data\test_individuals.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>test_individuals.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="request_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="individual_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="housing_situation_2_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="housing_situation_2_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="birth_month" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="birth_year" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="childcare_center_supervision" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="disabled_worker_certification" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="individual_creation_date" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="individual_role" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="individual_role_2_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="individual_role_2_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="marital_status_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="marital_status_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="pregnancy" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="859.0002" y="504.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="individual_id" action="GroupBy" rename="individual_id" />
+                <SummarizeField field="request_id" action="CountDistinct" rename="CountDistinct_request_id" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1003" y="516.9997" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="CountDistinct_request_id" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CountDistinct_request_id - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="919.0001" y="648.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[individual_id] = "a8610072dbcdd92a8f114becc073eb8e"</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>individual_id</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-05-25 19:04:56</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>a8610072dbcdd92a8f114becc073eb8e</Operand>
+                  <StartDate>2019-05-25 19:04:56</StartDate>
+                  <EndDate>2019-05-25 19:04:56</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[individual_id] = "a8610072dbcdd92a8f114becc073eb8e"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="1015" y="648.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="individual_id" />
+                <Field field="housing_situation_2_id" />
+                <Field field="housing_situation_2_label" />
+                <Field field="birth_month" />
+                <Field field="birth_year" />
+                <Field field="childcare_center_supervision" />
+                <Field field="disabled_worker_certification" />
+                <Field field="gender" />
+                <Field field="individual_creation_date" />
+                <Field field="individual_role" />
+                <Field field="individual_role_2_id" />
+                <Field field="individual_role_2_label" />
+                <Field field="marital_status_id" />
+                <Field field="marital_status_label" />
+                <Field field="pregnancy" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Unique: individual_id, housing_situation_2_id, housing_situation_2_label, birth_month, birth_year, childcare_center_supervision, disabled_worker_certification, gender, individual_creation_date, individual_role, individual_role_2_id, individual_role_2_label, marital_status_id, marital_status_label, pregnancy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1315" y="576.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1483" y="792.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="request_id" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="request_id" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_request_id" selected="False" rename="IND_request_id" />
+                    <SelectField field="Left_individual_id" selected="True" rename="IND_individual_id" />
+                    <SelectField field="Left_housing_situation_2_id" selected="True" rename="IND_housing_situation_2_id" />
+                    <SelectField field="Left_housing_situation_2_label" selected="True" rename="IND_housing_situation_2_label" />
+                    <SelectField field="Left_birth_month" selected="True" rename="IND_birth_month" />
+                    <SelectField field="Left_birth_year" selected="True" rename="IND_birth_year" />
+                    <SelectField field="Left_childcare_center_supervision" selected="True" rename="IND_childcare_center_supervision" />
+                    <SelectField field="Left_disabled_worker_certification" selected="True" rename="IND_disabled_worker_certification" />
+                    <SelectField field="Left_gender" selected="True" rename="IND_gender" />
+                    <SelectField field="Left_individual_creation_date" selected="True" rename="IND_individual_creation_date" />
+                    <SelectField field="Left_individual_role" selected="True" rename="IND_individual_role" />
+                    <SelectField field="Left_individual_role_2_id" selected="True" rename="IND_individual_role_2_id" />
+                    <SelectField field="Left_individual_role_2_label" selected="True" rename="IND_individual_role_2_label" />
+                    <SelectField field="Left_marital_status_id" selected="True" rename="IND_marital_status_id" />
+                    <SelectField field="Left_marital_status_label" selected="True" rename="IND_marital_status_label" />
+                    <SelectField field="Left_pregnancy" selected="True" rename="IND_pregnancy" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1195" y="996.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="request_id" action="GroupBy" rename="request_id" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="871.0001" y="996.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([request_id])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>request_id</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-05-26 16:14:06</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-05-26 16:14:06</StartDate>
+                  <EndDate>2019-05-26 16:14:06</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([request_id])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1651" y="732.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="request_id" action="GroupBy" rename="request_id" />
+                <SummarizeField field="animal_presence" action="First" rename="First_animal_presence" />
+                <SummarizeField field="answer_creation_date" action="First" rename="First_answer_creation_date" />
+                <SummarizeField field="child_situation" action="First" rename="First_child_situation" />
+                <SummarizeField field="child_to_come" action="First" rename="First_child_to_come" />
+                <SummarizeField field="district" action="First" rename="First_district" />
+                <SummarizeField field="granted_number_of_nights" action="First" rename="First_granted_number_of_nights" />
+                <SummarizeField field="group_composition_id" action="First" rename="First_group_composition_id" />
+                <SummarizeField field="group_composition_label" action="First" rename="First_group_composition_label" />
+                <SummarizeField field="group_creation_date" action="First" rename="First_group_creation_date" />
+                <SummarizeField field="group_id" action="First" rename="First_group_id" />
+                <SummarizeField field="group_main_requester_id" action="First" rename="First_group_main_requester_id" />
+                <SummarizeField field="group_type" action="First" rename="First_group_type" />
+                <SummarizeField field="housing_situation_id" action="First" rename="First_housing_situation_id" />
+                <SummarizeField field="housing_situation_label" action="First" rename="First_housing_situation_label" />
+                <SummarizeField field="long_term_housing_request" action="First" rename="First_long_term_housing_request" />
+                <SummarizeField field="number_of_underage" action="First" rename="First_number_of_underage" />
+                <SummarizeField field="request_backoffice_creator_id" action="First" rename="First_request_backoffice_creator_id" />
+                <SummarizeField field="request_creation_date" action="First" rename="First_request_creation_date" />
+                <SummarizeField field="requester_type" action="First" rename="First_requester_type" />
+                <SummarizeField field="social_situation_id" action="First" rename="First_social_situation_id" />
+                <SummarizeField field="town" action="First" rename="First_town" />
+                <SummarizeField field="victim_of_violence" action="First" rename="First_victim_of_violence" />
+                <SummarizeField field="victim_of_violence_type" action="First" rename="First_victim_of_violence_type" />
+                <SummarizeField field="IND_individual_id" action="Max" rename="Max_IND_individual_id" />
+                <SummarizeField field="IND_housing_situation_2_id" action="Max" rename="Max_IND_housing_situation_2_id" />
+                <SummarizeField field="IND_housing_situation_2_label" action="Max" rename="Max_IND_housing_situation_2_label" />
+                <SummarizeField field="IND_birth_month" action="Max" rename="Max_IND_birth_month" />
+                <SummarizeField field="IND_birth_year" action="Max" rename="Max_IND_birth_year" />
+                <SummarizeField field="IND_childcare_center_supervision" action="Max" rename="Max_IND_childcare_center_supervision" />
+                <SummarizeField field="IND_disabled_worker_certification" action="Max" rename="Max_IND_disabled_worker_certification" />
+                <SummarizeField field="IND_gender" action="Max" rename="Max_IND_gender" />
+                <SummarizeField field="IND_individual_creation_date" action="Max" rename="Max_IND_individual_creation_date" />
+                <SummarizeField field="IND_individual_role" action="Max" rename="Max_IND_individual_role" />
+                <SummarizeField field="IND_individual_role_2_id" action="Max" rename="Max_IND_individual_role_2_id" />
+                <SummarizeField field="IND_individual_role_2_label" action="Max" rename="Max_IND_individual_role_2_label" />
+                <SummarizeField field="IND_marital_status_id" action="Max" rename="Max_IND_marital_status_id" />
+                <SummarizeField field="IND_marital_status_label" action="Max" rename="Max_IND_marital_status_label" />
+                <SummarizeField field="IND_pregnancy" action="Max" rename="Max_IND_pregnancy" />
+                <SummarizeField field="IND_housing_situation_2_id" action="CountDistinct" rename="Number_of_housing_situation" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1771" y="696.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="First_animal_presence" selected="True" rename="animal_presence" />
+                <SelectField field="First_answer_creation_date" selected="True" rename="answer_creation_date" />
+                <SelectField field="First_child_situation" selected="True" rename="child_situation" />
+                <SelectField field="First_child_to_come" selected="True" rename="child_to_come" />
+                <SelectField field="First_district" selected="True" rename="district" />
+                <SelectField field="First_granted_number_of_nights" selected="True" rename="granted_number_of_nights" />
+                <SelectField field="First_group_composition_id" selected="True" rename="group_composition_id" />
+                <SelectField field="First_group_composition_label" selected="True" rename="group_composition_label" />
+                <SelectField field="First_group_creation_date" selected="True" rename="group_creation_date" />
+                <SelectField field="First_group_id" selected="True" rename="group_id" />
+                <SelectField field="First_group_main_requester_id" selected="True" rename="group_main_requester_id" />
+                <SelectField field="First_group_type" selected="True" rename="group_type" />
+                <SelectField field="First_housing_situation_id" selected="True" rename="housing_situation_id" />
+                <SelectField field="First_housing_situation_label" selected="True" rename="housing_situation_label" />
+                <SelectField field="First_long_term_housing_request" selected="True" rename="long_term_housing_request" />
+                <SelectField field="First_number_of_underage" selected="True" rename="number_of_underage" />
+                <SelectField field="First_request_backoffice_creator_id" selected="True" rename="request_backoffice_creator_id" />
+                <SelectField field="First_request_creation_date" selected="True" rename="request_creation_date" />
+                <SelectField field="First_requester_type" selected="True" rename="requester_type" />
+                <SelectField field="First_social_situation_id" selected="True" rename="social_situation_id" />
+                <SelectField field="First_town" selected="True" rename="town" />
+                <SelectField field="First_victim_of_violence" selected="True" rename="victim_of_violence" />
+                <SelectField field="First_victim_of_violence_type" selected="True" rename="victim_of_violence_type" />
+                <SelectField field="Max_IND_individual_id" selected="True" rename="individual_id" />
+                <SelectField field="Max_IND_housing_situation_2_id" selected="True" rename="housing_situation_2_id" />
+                <SelectField field="Max_IND_housing_situation_2_label" selected="True" rename="housing_situation_2_label" />
+                <SelectField field="Max_IND_birth_month" selected="True" rename="birth_month" />
+                <SelectField field="Max_IND_birth_year" selected="True" rename="birth_year" />
+                <SelectField field="Max_IND_childcare_center_supervision" selected="True" rename="childcare_center_supervision" />
+                <SelectField field="Max_IND_disabled_worker_certification" selected="True" rename="disabled_worker_certification" />
+                <SelectField field="Max_IND_gender" selected="True" rename="gender" />
+                <SelectField field="Max_IND_individual_creation_date" selected="True" rename="individual_creation_date" />
+                <SelectField field="Max_IND_individual_role" selected="True" rename="individual_role" />
+                <SelectField field="Max_IND_individual_role_2_id" selected="True" rename="individual_role_2_id" />
+                <SelectField field="Max_IND_individual_role_2_label" selected="True" rename="individual_role_2_label" />
+                <SelectField field="Max_IND_marital_status_id" selected="True" rename="marital_status_id" />
+                <SelectField field="Max_IND_marital_status_label" selected="True" rename="marital_status_label" />
+                <SelectField field="Max_IND_pregnancy" selected="True" rename="pregnancy" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="1867" y="660.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="request_id" selected="True" />
+                <Field field="animal_presence" selected="True" />
+                <Field field="answer_creation_date" selected="True" />
+                <Field field="child_situation" selected="True" />
+                <Field field="child_to_come" selected="True" />
+                <Field field="district" selected="True" />
+                <Field field="granted_number_of_nights" selected="True" />
+                <Field field="group_composition_id" selected="True" />
+                <Field field="group_composition_label" selected="True" />
+                <Field field="group_creation_date" selected="True" />
+                <Field field="group_id" selected="True" />
+                <Field field="group_main_requester_id" selected="True" />
+                <Field field="group_type" selected="True" />
+                <Field field="housing_situation_id" selected="True" />
+                <Field field="housing_situation_label" selected="True" />
+                <Field field="long_term_housing_request" selected="True" />
+                <Field field="number_of_underage" selected="True" />
+                <Field field="request_backoffice_creator_id" selected="True" />
+                <Field field="request_creation_date" selected="True" />
+                <Field field="requester_type" selected="True" />
+                <Field field="social_situation_id" selected="True" />
+                <Field field="town" selected="True" />
+                <Field field="victim_of_violence" selected="True" />
+                <Field field="victim_of_violence_type" selected="True" />
+                <Field field="individual_id" selected="True" />
+                <Field field="housing_situation_2_id" selected="True" />
+                <Field field="housing_situation_2_label" selected="True" />
+                <Field field="birth_month" selected="True" />
+                <Field field="birth_year" selected="True" />
+                <Field field="childcare_center_supervision" selected="True" />
+                <Field field="disabled_worker_certification" selected="True" />
+                <Field field="gender" selected="True" />
+                <Field field="individual_creation_date" selected="True" />
+                <Field field="individual_role" selected="True" />
+                <Field field="individual_role_2_id" selected="True" />
+                <Field field="individual_role_2_label" selected="True" />
+                <Field field="marital_status_id" selected="True" />
+                <Field field="marital_status_label" selected="True" />
+                <Field field="pregnancy" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="request_id" size="32" source="Summarize: GroupBy - request_id" type="String" />
+                <Field name="animal_presence" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="Bool" />
+                <Field name="answer_creation_date" size="23" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="String" />
+                <Field name="child_situation" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="Int16" />
+                <Field name="child_to_come" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="Bool" />
+                <Field name="district" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="Int32" />
+                <Field name="granted_number_of_nights" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="Byte" />
+                <Field name="group_composition_id" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="Int16" />
+                <Field name="group_composition_label" size="29" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_String" />
+                <Field name="group_creation_date" size="23" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="String" />
+                <Field name="group_id" size="32" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="String" />
+                <Field name="group_main_requester_id" size="32" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="String" />
+                <Field name="group_type" size="10" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="String" />
+                <Field name="housing_situation_id" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="Byte" />
+                <Field name="housing_situation_label" size="43" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_String" />
+                <Field name="long_term_housing_request" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="Bool" />
+                <Field name="number_of_underage" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="Int16" />
+                <Field name="request_backoffice_creator_id" size="32" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="String" />
+                <Field name="request_creation_date" size="23" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="String" />
+                <Field name="requester_type" size="13" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_String" />
+                <Field name="social_situation_id" size="32" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="String" />
+                <Field name="town" size="29" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_String" />
+                <Field name="victim_of_violence" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="Bool" />
+                <Field name="victim_of_violence_type" size="33" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_requests.csv" type="V_String" />
+                <Field name="individual_id" size="32" source="File: (Multiple Sources)" type="String" />
+                <Field name="housing_situation_2_id" source="File: (Multiple Sources)" type="Byte" />
+                <Field name="housing_situation_2_label" size="47" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="birth_month" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="birth_year" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="childcare_center_supervision" source="File: (Multiple Sources)" type="Bool" />
+                <Field name="disabled_worker_certification" source="File: (Multiple Sources)" type="Bool" />
+                <Field name="gender" size="6" source="File: (Multiple Sources)" type="String" />
+                <Field name="individual_creation_date" source="File: (Multiple Sources)" type="Date" />
+                <Field name="individual_role" size="15" source="File: (Multiple Sources)" type="String" />
+                <Field name="individual_role_2_id" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="individual_role_2_label" size="26" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="marital_status_id" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="marital_status_label" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="pregnancy" source="File: (Multiple Sources)" type="Bool" />
+                <Field name="Number_of_housing_situation" source="Summarize: CountDistinct - IND_housing_situation_2_id" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1399" y="660.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="2019-CharToInt([birth_year])" field="year_of_individual" size="8" type="Int64" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[year_of_individual = 2019-CharToInt([birth_year])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="750" y="498" width="187.6143" height="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Enrich requests test data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="774" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">../data/train_individuals.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>train_individuals.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="request_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="individual_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="housing_situation_2_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="housing_situation_2_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="birth_month" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="birth_year" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="childcare_center_supervision" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="disabled_worker_certification" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="individual_creation_date" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="individual_role" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="individual_role_2_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="individual_role_2_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="marital_status_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="marital_status_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+                <Field name="pregnancy" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\train_individuals.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="774" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">..\data\test_individuals.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>test_individuals.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="request_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="individual_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="housing_situation_2_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="housing_situation_2_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="birth_month" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="birth_year" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="childcare_center_supervision" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="disabled_worker_certification" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="individual_creation_date" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="individual_role" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="individual_role_2_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="individual_role_2_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="marital_status_id" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="marital_status_label" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+                <Field name="pregnancy" size="254" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_individuals.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="906" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="individual_id" action="GroupBy" rename="individual_id" />
+                <SummarizeField field="request_id" action="CountDistinct" rename="CountDistinct_request_id" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1050" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="CountDistinct_request_id" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CountDistinct_request_id - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="966" y="702" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[individual_id] = "a8610072dbcdd92a8f114becc073eb8e"</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>individual_id</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-05-25 19:04:56</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>a8610072dbcdd92a8f114becc073eb8e</Operand>
+                  <StartDate>2019-05-25 19:04:56</StartDate>
+                  <EndDate>2019-05-25 19:04:56</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[individual_id] = "a8610072dbcdd92a8f114becc073eb8e"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="1062" y="702" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="individual_id" />
+                <Field field="housing_situation_2_id" />
+                <Field field="housing_situation_2_label" />
+                <Field field="birth_month" />
+                <Field field="birth_year" />
+                <Field field="childcare_center_supervision" />
+                <Field field="disabled_worker_certification" />
+                <Field field="gender" />
+                <Field field="individual_creation_date" />
+                <Field field="individual_role" />
+                <Field field="individual_role_2_id" />
+                <Field field="individual_role_2_label" />
+                <Field field="marital_status_id" />
+                <Field field="marital_status_label" />
+                <Field field="pregnancy" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Unique: individual_id, housing_situation_2_id, housing_situation_2_label, birth_month, birth_year, childcare_center_supervision, disabled_worker_certification, gender, individual_creation_date, individual_role, individual_role_2_id, individual_role_2_label, marital_status_id, marital_status_label, pregnancy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1362" y="630" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1530" y="846" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="request_id" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="request_id" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_request_id" selected="False" rename="IND_request_id" />
+                    <SelectField field="Left_individual_id" selected="True" rename="IND_individual_id" />
+                    <SelectField field="Left_housing_situation_2_id" selected="True" rename="IND_housing_situation_2_id" />
+                    <SelectField field="Left_housing_situation_2_label" selected="True" rename="IND_housing_situation_2_label" />
+                    <SelectField field="Left_birth_month" selected="True" rename="IND_birth_month" />
+                    <SelectField field="Left_birth_year" selected="True" rename="IND_birth_year" />
+                    <SelectField field="Left_childcare_center_supervision" selected="True" rename="IND_childcare_center_supervision" />
+                    <SelectField field="Left_disabled_worker_certification" selected="True" rename="IND_disabled_worker_certification" />
+                    <SelectField field="Left_gender" selected="True" rename="IND_gender" />
+                    <SelectField field="Left_individual_creation_date" selected="True" rename="IND_individual_creation_date" />
+                    <SelectField field="Left_individual_role" selected="True" rename="IND_individual_role" />
+                    <SelectField field="Left_individual_role_2_id" selected="True" rename="IND_individual_role_2_id" />
+                    <SelectField field="Left_individual_role_2_label" selected="True" rename="IND_individual_role_2_label" />
+                    <SelectField field="Left_marital_status_id" selected="True" rename="IND_marital_status_id" />
+                    <SelectField field="Left_marital_status_label" selected="True" rename="IND_marital_status_label" />
+                    <SelectField field="Left_pregnancy" selected="True" rename="IND_pregnancy" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1242" y="1050" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="request_id" action="GroupBy" rename="request_id" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="918" y="1050" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([request_id])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>request_id</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-05-26 16:14:06</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-05-26 16:14:06</StartDate>
+                  <EndDate>2019-05-26 16:14:06</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([request_id])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1698" y="786" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="request_id" action="GroupBy" rename="request_id" />
+                <SummarizeField field="animal_presence" action="First" rename="First_animal_presence" />
+                <SummarizeField field="answer_creation_date" action="First" rename="First_answer_creation_date" />
+                <SummarizeField field="child_situation" action="First" rename="First_child_situation" />
+                <SummarizeField field="child_to_come" action="First" rename="First_child_to_come" />
+                <SummarizeField field="district" action="First" rename="First_district" />
+                <SummarizeField field="granted_number_of_nights" action="First" rename="First_granted_number_of_nights" />
+                <SummarizeField field="group_composition_id" action="First" rename="First_group_composition_id" />
+                <SummarizeField field="group_composition_label" action="First" rename="First_group_composition_label" />
+                <SummarizeField field="group_creation_date" action="First" rename="First_group_creation_date" />
+                <SummarizeField field="group_id" action="First" rename="First_group_id" />
+                <SummarizeField field="group_main_requester_id" action="First" rename="First_group_main_requester_id" />
+                <SummarizeField field="group_type" action="First" rename="First_group_type" />
+                <SummarizeField field="housing_situation_id" action="First" rename="First_housing_situation_id" />
+                <SummarizeField field="housing_situation_label" action="First" rename="First_housing_situation_label" />
+                <SummarizeField field="long_term_housing_request" action="First" rename="First_long_term_housing_request" />
+                <SummarizeField field="number_of_underage" action="First" rename="First_number_of_underage" />
+                <SummarizeField field="request_backoffice_creator_id" action="First" rename="First_request_backoffice_creator_id" />
+                <SummarizeField field="request_creation_date" action="First" rename="First_request_creation_date" />
+                <SummarizeField field="requester_type" action="First" rename="First_requester_type" />
+                <SummarizeField field="social_situation_id" action="First" rename="First_social_situation_id" />
+                <SummarizeField field="town" action="First" rename="First_town" />
+                <SummarizeField field="victim_of_violence" action="First" rename="First_victim_of_violence" />
+                <SummarizeField field="victim_of_violence_type" action="First" rename="First_victim_of_violence_type" />
+                <SummarizeField field="IND_individual_id" action="Max" rename="Max_IND_individual_id" />
+                <SummarizeField field="IND_housing_situation_2_id" action="Max" rename="Max_IND_housing_situation_2_id" />
+                <SummarizeField field="IND_housing_situation_2_label" action="Max" rename="Max_IND_housing_situation_2_label" />
+                <SummarizeField field="IND_birth_month" action="Max" rename="Max_IND_birth_month" />
+                <SummarizeField field="IND_birth_year" action="Max" rename="Max_IND_birth_year" />
+                <SummarizeField field="IND_childcare_center_supervision" action="Max" rename="Max_IND_childcare_center_supervision" />
+                <SummarizeField field="IND_disabled_worker_certification" action="Max" rename="Max_IND_disabled_worker_certification" />
+                <SummarizeField field="IND_gender" action="Max" rename="Max_IND_gender" />
+                <SummarizeField field="IND_individual_creation_date" action="Max" rename="Max_IND_individual_creation_date" />
+                <SummarizeField field="IND_individual_role" action="Max" rename="Max_IND_individual_role" />
+                <SummarizeField field="IND_individual_role_2_id" action="Max" rename="Max_IND_individual_role_2_id" />
+                <SummarizeField field="IND_individual_role_2_label" action="Max" rename="Max_IND_individual_role_2_label" />
+                <SummarizeField field="IND_marital_status_id" action="Max" rename="Max_IND_marital_status_id" />
+                <SummarizeField field="IND_marital_status_label" action="Max" rename="Max_IND_marital_status_label" />
+                <SummarizeField field="IND_pregnancy" action="Max" rename="Max_IND_pregnancy" />
+                <SummarizeField field="IND_housing_situation_2_id" action="CountDistinct" rename="Number_of_housing_situation" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1818" y="750" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="First_animal_presence" selected="True" rename="animal_presence" />
+                <SelectField field="First_answer_creation_date" selected="True" rename="answer_creation_date" />
+                <SelectField field="First_child_situation" selected="True" rename="child_situation" />
+                <SelectField field="First_child_to_come" selected="True" rename="child_to_come" />
+                <SelectField field="First_district" selected="True" rename="district" />
+                <SelectField field="First_granted_number_of_nights" selected="True" rename="granted_number_of_nights" />
+                <SelectField field="First_group_composition_id" selected="True" rename="group_composition_id" />
+                <SelectField field="First_group_composition_label" selected="True" rename="group_composition_label" />
+                <SelectField field="First_group_creation_date" selected="True" rename="group_creation_date" />
+                <SelectField field="First_group_id" selected="True" rename="group_id" />
+                <SelectField field="First_group_main_requester_id" selected="True" rename="group_main_requester_id" />
+                <SelectField field="First_group_type" selected="True" rename="group_type" />
+                <SelectField field="First_housing_situation_id" selected="True" rename="housing_situation_id" />
+                <SelectField field="First_housing_situation_label" selected="True" rename="housing_situation_label" />
+                <SelectField field="First_long_term_housing_request" selected="True" rename="long_term_housing_request" />
+                <SelectField field="First_number_of_underage" selected="True" rename="number_of_underage" />
+                <SelectField field="First_request_backoffice_creator_id" selected="True" rename="request_backoffice_creator_id" />
+                <SelectField field="First_request_creation_date" selected="True" rename="request_creation_date" />
+                <SelectField field="First_requester_type" selected="True" rename="requester_type" />
+                <SelectField field="First_social_situation_id" selected="True" rename="social_situation_id" />
+                <SelectField field="First_town" selected="True" rename="town" />
+                <SelectField field="First_victim_of_violence" selected="True" rename="victim_of_violence" />
+                <SelectField field="First_victim_of_violence_type" selected="True" rename="victim_of_violence_type" />
+                <SelectField field="Max_IND_individual_id" selected="True" rename="individual_id" />
+                <SelectField field="Max_IND_housing_situation_2_id" selected="True" rename="housing_situation_2_id" />
+                <SelectField field="Max_IND_housing_situation_2_label" selected="True" rename="housing_situation_2_label" />
+                <SelectField field="Max_IND_birth_month" selected="True" rename="birth_month" />
+                <SelectField field="Max_IND_birth_year" selected="True" rename="birth_year" />
+                <SelectField field="Max_IND_childcare_center_supervision" selected="True" rename="childcare_center_supervision" />
+                <SelectField field="Max_IND_disabled_worker_certification" selected="True" rename="disabled_worker_certification" />
+                <SelectField field="Max_IND_gender" selected="True" rename="gender" />
+                <SelectField field="Max_IND_individual_creation_date" selected="True" rename="individual_creation_date" />
+                <SelectField field="Max_IND_individual_role" selected="True" rename="individual_role" />
+                <SelectField field="Max_IND_individual_role_2_id" selected="True" rename="individual_role_2_id" />
+                <SelectField field="Max_IND_individual_role_2_label" selected="True" rename="individual_role_2_label" />
+                <SelectField field="Max_IND_marital_status_id" selected="True" rename="marital_status_id" />
+                <SelectField field="Max_IND_marital_status_label" selected="True" rename="marital_status_label" />
+                <SelectField field="Max_IND_pregnancy" selected="True" rename="pregnancy" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="1914" y="714" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="request_id" selected="True" />
+                <Field field="animal_presence" selected="True" />
+                <Field field="answer_creation_date" selected="True" />
+                <Field field="child_situation" selected="True" />
+                <Field field="child_to_come" selected="True" />
+                <Field field="district" selected="True" />
+                <Field field="granted_number_of_nights" selected="True" />
+                <Field field="group_composition_id" selected="True" />
+                <Field field="group_composition_label" selected="True" />
+                <Field field="group_creation_date" selected="True" />
+                <Field field="group_id" selected="True" />
+                <Field field="group_main_requester_id" selected="True" />
+                <Field field="group_type" selected="True" />
+                <Field field="housing_situation_id" selected="True" />
+                <Field field="housing_situation_label" selected="True" />
+                <Field field="long_term_housing_request" selected="True" />
+                <Field field="number_of_underage" selected="True" />
+                <Field field="request_backoffice_creator_id" selected="True" />
+                <Field field="request_creation_date" selected="True" />
+                <Field field="requester_type" selected="True" />
+                <Field field="social_situation_id" selected="True" />
+                <Field field="town" selected="True" />
+                <Field field="victim_of_violence" selected="True" />
+                <Field field="victim_of_violence_type" selected="True" />
+                <Field field="individual_id" selected="True" />
+                <Field field="housing_situation_2_id" selected="True" />
+                <Field field="housing_situation_2_label" selected="True" />
+                <Field field="birth_month" selected="True" />
+                <Field field="birth_year" selected="True" />
+                <Field field="childcare_center_supervision" selected="True" />
+                <Field field="disabled_worker_certification" selected="True" />
+                <Field field="gender" selected="True" />
+                <Field field="individual_creation_date" selected="True" />
+                <Field field="individual_role" selected="True" />
+                <Field field="individual_role_2_id" selected="True" />
+                <Field field="individual_role_2_label" selected="True" />
+                <Field field="marital_status_id" selected="True" />
+                <Field field="marital_status_label" selected="True" />
+                <Field field="pregnancy" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="request_id" size="32" source="Summarize: GroupBy - request_id" type="String" />
+                <Field name="animal_presence" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="Bool" />
+                <Field name="answer_creation_date" size="23" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="String" />
+                <Field name="child_situation" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="Int16" />
+                <Field name="child_to_come" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="Bool" />
+                <Field name="district" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="Int32" />
+                <Field name="group_composition_id" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="Byte" />
+                <Field name="group_composition_label" size="29" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_String" />
+                <Field name="group_creation_date" size="23" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="String" />
+                <Field name="group_id" size="32" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="String" />
+                <Field name="group_main_requester_id" size="32" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="String" />
+                <Field name="group_type" size="10" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="String" />
+                <Field name="housing_situation_id" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="Byte" />
+                <Field name="housing_situation_label" size="43" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_String" />
+                <Field name="long_term_housing_request" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="Bool" />
+                <Field name="number_of_underage" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="Int16" />
+                <Field name="request_backoffice_creator_id" size="32" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="String" />
+                <Field name="request_creation_date" size="23" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="String" />
+                <Field name="requester_type" size="13" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_String" />
+                <Field name="social_situation_id" size="32" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="String" />
+                <Field name="town" size="29" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_String" />
+                <Field name="victim_of_violence" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="Bool" />
+                <Field name="victim_of_violence_type" size="33" source="File: C:\Users\kkpakpo\Documents\MDF-2019\data\test_requests.csv" type="V_String" />
+                <Field name="individual_id" size="32" source="File: (Multiple Sources)" type="String" />
+                <Field name="housing_situation_2_id" source="File: (Multiple Sources)" type="Byte" />
+                <Field name="housing_situation_2_label" size="47" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="birth_month" source="File: (Multiple Sources)" type="Byte" />
+                <Field name="birth_year" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="childcare_center_supervision" source="File: (Multiple Sources)" type="Bool" />
+                <Field name="disabled_worker_certification" source="File: (Multiple Sources)" type="Bool" />
+                <Field name="gender" size="6" source="File: (Multiple Sources)" type="String" />
+                <Field name="individual_creation_date" source="File: (Multiple Sources)" type="Date" />
+                <Field name="individual_role" size="15" source="File: (Multiple Sources)" type="String" />
+                <Field name="individual_role_2_id" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="individual_role_2_label" size="26" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="marital_status_id" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="marital_status_label" size="20" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="pregnancy" source="File: (Multiple Sources)" type="Bool" />
+                <Field name="Number_of_housing_situation" source="Summarize: CountDistinct - IND_housing_situation_2_id" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1446" y="714" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="2019-CharToInt([birth_year])" field="year_of_individual" size="8" type="Int64" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[year_of_individual = 2019-CharToInt([birth_year])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="True" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="True" />
+      <Destination ToolID="15" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="15" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Join" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="36" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="36" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>preprocessing</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -16,3 +16,4 @@ Validation method to estimate prediction error.
 
 * Dates: calculate periods
 * Text columns: tf-idf vectorizer?
+* town: clusterize by region

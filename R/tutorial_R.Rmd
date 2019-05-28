@@ -1,0 +1,163 @@
+---
+title: "R starter for the DSO 2019"
+output: html_notebook
+---
+
+```{r}
+library(ggplot2)
+library(nnet)
+```
+
+```{r}
+# Define the competition scorer
+log_loss <- function(y_true, y_pred, eps = 1e-15,
+                    sample_weight = NULL){
+  # y_true (vector of type factor) : true labels
+  # y_pred (matrix of dimension (nb. of obs., nb of classes)) : matrix of predicted probabilities
+  # sample_weight (vector of type numeric) : vector of sample weights
+  
+  if (is.null(sample_weight)) sample_weight <- rep(1, length(y_true))
+  
+  y_pred[y_pred > 1 - eps] <- 1 - eps
+  y_pred[y_pred < eps] <- eps
+  y_pred <- t(apply(y_pred, 1, function(r){r/sum(r)}))
+  col_index <- as.integer(as.character(y_true)) + 1
+  prob <- do.call(c, lapply(1:length(y_true),
+                           function(i){y_pred[i, col_index[i]]}))
+  return(-sum(sample_weight * log(prob)) / sum(sample_weight))
+}
+
+competition_scorer <- function(y_true, y_pred){
+  u <- as.numeric(as.character(y_true))
+  sample_weight <- 10^u
+  log_loss(y_true, y_pred, sample_weight = sample_weight)
+}
+```
+
+# 1- Information about the challenge
+
+In this challenge, the `requests` dataset contains information about the requests made by group of individuals (or family) to the french emergency housing public service. A sample of the `requests` dataset corresponds to a unique request.
+
+The goal is to predict the categorical variable `granted_number_of_nights` which represents the number of nights of emergency housing granted to a group. You can train your model on the `train_requests`, the predictions should be made for requests listed in the `test_requests` dataset.
+
+The evaluation metric is given by the `competition_scorer` defined above. It corresponds to a weighted log-loss with weights 1, 10, 100, or 1000 if the `granted_number_of_nights` takes the value 0, 1, 2, or 3 respectively. Thus beware that you will be penalized harder for classification mistakes made on the higher labels.
+
+Good luck!
+
+# 2- Load the datasets
+
+```{r}
+# Train sample
+requests <- read.csv('data/train_requests.csv', flush = TRUE)
+
+# Test sample
+requests_test <- read.csv('data/test_requests.csv', flush = TRUE)
+```
+
+
+```{r}
+# Inspect basic metadata about the dataset
+str(requests)
+```
+
+
+# 3- Distribution of the target
+
+```{r}
+# histogram of the target variable
+ggplot(data = requests, aes(x = granted_number_of_nights)) + geom_bar()
+```
+
+# 4-Train and evaluate a first model
+
+```{r}
+# selected columns for explanatory variable
+columns <- c('district',
+             'housing_situation_id',
+             'group_composition_id')
+```
+
+
+```{r}
+# change 'granted_number_of_nights' column type to factor
+requests$granted_number_of_nights <- as.factor(requests$granted_number_of_nights)
+
+# split between the train and the validation samples
+train_obs <- sample(1:nrow(requests), nrow(requests) * 0.67)
+train <- requests[train_obs, c('granted_number_of_nights', columns)]
+val <- requests[-train_obs, c('granted_number_of_nights', columns)]
+```
+
+```{r}
+# fit multinomial logistic regression as first model
+model <- multinom(granted_number_of_nights ~., data = train)
+```
+
+```{r}
+# evaluate the model with the competition scorer (validation set)
+competition_scorer(y_true = val$granted_number_of_nights,
+                   y_pred = predict(model, val[, columns], type = "prob"))
+```
+
+
+# 5- Compute predictions on the test set 
+
+```{r}
+# use the model to make predictions for the test observations
+y_pred <- predict(model, requests_test[, columns], type = "prob")
+```
+
+```{r}
+# overview of the first predicted probabilities
+head(y_pred)
+```
+
+```{r}
+# create the dataframe of predictions on the test set
+predictions <- cbind(request_id = requests_test$request_id, y_pred)
+```
+
+
+
+# 6- Submit the predictions on the platform
+
+```{r}
+# Get your token from qscore:
+# 1. Go to https://qscore.datascience-olympics.com/
+# 2. Chose the competition Data Science Olympics 2019
+# 3. In the left menu click 'Submissions'
+# 4. Your token is in the 'Submit from your Python Notebook' tab
+
+library(httr)
+library(R.utils)
+submit_prediction <- function(predictions, comment = '') {
+  # write the dataset with predictions on your current directory
+  token <- 'YOUR_TOKEN_HERE'
+  url <- 'https://qscore.datascience-olympics.com/api/submissions'
+
+  f <- write.csv(predictions, file = 'predictions.csv', row.names = F)
+  fgzip <- gzip('predictions.csv', overwrite=TRUE)
+  response <- POST(url = url,
+                   add_headers(Authorization = paste0('Bearer ', token)),
+                   body = list(datafile = upload_file('predictions.csv.gz'),
+                               compression = 'gzip',
+                               comment = comment)
+                   )
+  
+  if (response$status_code == 429) {
+    stop(sprintf('Submissions are too close. Next submission is only allowed in %s seconds.',
+                 ceiling(strtoi(response$headers$'x-rate-limit-remaining') / 1000.0)
+                 )
+    )
+  }
+  else if (response$status_code != 200) {
+    stop(content(response, type = 'text')
+    )
+  }
+}
+```
+
+```{r}
+submit_prediction(predictions, 'my submission')
+```
+
